@@ -1,0 +1,74 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "10c44885ec2064935075",
+  "position": {
+    "x": 865,
+    "y": 0,
+    "z": 2001,
+    "height": 439,
+    "width": 417,
+    "tabOrder": 2001
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "job_log"
+                    }
+                  },
+                  "Property": "Jobs from normal runs"
+                }
+              },
+              "queryRef": "job_log.Jobs from normal runs",
+              "nativeQueryRef": "Jobs from normal runs"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "job_log"
+                  }
+                },
+                "Property": "Jobs from normal runs"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "333e4274ba3107ea841c",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "job_log"
+              }
+            },
+            "Property": "Jobs from normal runs"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

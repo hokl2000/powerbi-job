@@ -1,0 +1,123 @@
+table job_log
+	lineageTag: 490f61aa-d191-4d79-b7bf-95f99890b771
+
+	measure Rejected = COUNTROWS(FILTER(job_log, job_log[StatusGroup] = "rejected"))
+		formatString: 0
+		lineageTag: 79f69e0a-a53e-46ec-b738-22ddb694a87f
+
+	measure Applied = COUNTROWS(FILTER(job_log, job_log[StatusGroup] = "applied"))
+		formatString: 0
+		lineageTag: fef53203-6566-4184-b096-0931845eeabb
+
+	measure 'Deadlines next 7 days' = COUNTROWS(FILTER(job_log, job_log[StatusGroup] = "sent" && job_log[DeadlineDate] >= TODAY() && job_log[DeadlineDate] <= TODAY()+7))
+		formatString: 0
+		lineageTag: d9615f30-8375-47da-8099-15e9507915d8
+
+	measure 'Jobs from normal runs' = COUNTROWS(FILTER(job_log, job_log[IsTest] = FALSE()))
+		formatString: 0
+		lineageTag: 9d581e0c-3203-43e5-8bab-c2b4ffc4c384
+
+	column Sent
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 0f9eb704-6bc1-4354-8ba6-c9272a4d4594
+		summarizeBy: none
+		sourceColumn: Sent
+
+		variation Variation
+			isDefault
+			relationship: cfb4af52-79e6-4a36-acc8-7e3bad48c136
+			defaultHierarchy: LocalDateTable_5a0aa072-2569-44b4-af71-aefda4ba065e.Datohierarki
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Job
+		dataType: string
+		lineageTag: e47bf62c-ebaa-4f65-85aa-5e7e3362762e
+		summarizeBy: none
+		sourceColumn: Job
+
+		annotation SummarizationSetBy = Automatic
+
+	column Employer
+		dataType: string
+		lineageTag: 16b2c6d1-3618-41d2-ac54-4f353fb80e6e
+		summarizeBy: none
+		sourceColumn: Employer
+
+		annotation SummarizationSetBy = Automatic
+
+	column Link
+		dataType: string
+		lineageTag: f0d7511f-8db8-4e31-8869-ac698f50a2c8
+		summarizeBy: none
+		sourceColumn: Link
+
+		annotation SummarizationSetBy = Automatic
+
+	column Deadline
+		dataType: string
+		lineageTag: 9330b0d2-212f-4115-831a-bd42a9ac5944
+		summarizeBy: none
+		sourceColumn: Deadline
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: string
+		lineageTag: 029fea92-9ad8-45fb-8b45-7775bc7c524d
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column DeadlineDate
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: c1d59c20-037b-47f5-85d3-b3459fe67568
+		summarizeBy: none
+		sourceColumn: DeadlineDate
+
+		variation Variation
+			isDefault
+			relationship: f2a66af4-bd39-40a2-b85b-ba489e0f265c
+			defaultHierarchy: LocalDateTable_6becf20c-25b6-4a43-a3f1-cbe5f4c46ae2.Datohierarki
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column StatusGroup
+		dataType: string
+		lineageTag: e0c5fc29-ca28-4a77-a1a1-6a3391f7498a
+		summarizeBy: none
+		sourceColumn: StatusGroup
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsTest
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 65ae57d7-4ca7-4719-82d2-5e7d2d39146e
+		summarizeBy: none
+		sourceColumn: IsTest
+
+		annotation SummarizationSetBy = Automatic
+
+	partition job_log = m
+		mode: import
+		source =
+				let
+				  Kilde = Csv.Document(File.Contents("C:\Users\holge\Documents\powerbi-job-search\data\job_log_anonymised.csv"), [Delimiter = ";", Columns = 6, Encoding = 65001, QuoteStyle = QuoteStyle.None]),
+				  #"Hævede overskrifter" = Table.PromoteHeaders(Kilde, [PromoteAllScalars = true]),
+				  #"Ændret kolonnetype" = Table.TransformColumnTypes(#"Hævede overskrifter", {{"Sent", type date}, {"Job", type text}, {"Employer", type text}, {"Link", type text}, {"Deadline", type text}, {"Status", type text}}, "da"),
+				  #"Tilføjet brugerdefineret" = Table.TransformColumnTypes(Table.AddColumn(#"Ændret kolonnetype", "DeadlineDate", each try Date.FromText([Deadline], [Format="yyyy-MM-dd"]) otherwise null), {{"DeadlineDate", type date}}),
+				  #"Tilføjet brugerdefineret 1" = Table.TransformColumnTypes(Table.AddColumn(#"Tilføjet brugerdefineret", "StatusGroup", each List.First(Text.Split(List.First(Text.Split([Status], " (")), " –"))), {{"StatusGroup", type text}}),
+				  #"Tilføjet brugerdefineret 2" = Table.TransformColumnTypes(Table.AddColumn(#"Tilføjet brugerdefineret 1", "IsTest", each Text.Contains([Job], " test)")), {{"IsTest", type logical}})
+				in
+				  #"Tilføjet brugerdefineret 2"
+
+	annotation PBI_ResultType = Table
+

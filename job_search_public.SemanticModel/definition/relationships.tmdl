@@ -1,0 +1,10 @@
+relationship cfb4af52-79e6-4a36-acc8-7e3bad48c136
+	joinOnDateBehavior: datePartOnly
+	fromColumn: job_log.Sent
+	toColumn: LocalDateTable_5a0aa072-2569-44b4-af71-aefda4ba065e.Date
+
+relationship f2a66af4-bd39-40a2-b85b-ba489e0f265c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: job_log.DeadlineDate
+	toColumn: LocalDateTable_6becf20c-25b6-4a43-a3f1-cbe5f4c46ae2.Date
+

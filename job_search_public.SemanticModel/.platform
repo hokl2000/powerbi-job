@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "job_search_public"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "87cb9c95-2c8c-41cf-a4be-2b284e9f51e3"
+  }
+}

@@ -1,0 +1,91 @@
+﻿Sent;Job;Employer;Link;Deadline;Status
+2026-09-28;IT / digital project;Public employer 1;removed;2026-10-05;not interested
+2026-09-28;Data / BI analyst;Public employer 2;removed;unknown;expired
+2026-09-28;Data / BI analyst;Public employer 3;removed;unknown;expired
+2026-09-28;Application management;Public employer 4;removed;unknown (checked 2026-10-19);expired
+2026-09-28;Data / BI analyst;Public employer 5;removed;unknown (checked 2026-10-19);sent
+2026-09-28;Application management;Organisation employer 1;removed;unknown (checked 2026-10-19);sent
+2026-09-28;Green / nature / sustainability;Public employer 6;removed;unknown (checked 2026-10-12);sent
+2026-09-28;Data / BI analyst;Public employer 6;removed;unknown (checked 2026-10-12);sent
+2026-09-28;IT / digital project;Public employer 7;removed;unknown (checked 2026-10-19);sent
+2026-09-28;Application management;Public employer 6;removed;2026-10-23;expired
+2026-09-28;Data / BI analyst;Public employer 8;removed;unknown;expired
+2026-09-28;Green / nature / sustainability;Organisation employer 2;removed;unknown (checked 2026-10-19);sent
+2026-09-28;Data / BI analyst;Public employer 9;removed;unknown (checked 2026-10-19);sent
+2026-10-05;IT / digital project;Private employer 1;removed;2026-10-31;rejected (2026-10-16) – note removed
+2026-10-05;Green / nature / sustainability;Organisation employer 3;removed;unknown (checked 2026-10-13);sent
+2026-10-05;Data / BI analyst;Public employer 6;removed;2026-10-20;expired
+2026-10-05;AI role;Public employer 10;removed;2026-10-20;expired
+2026-10-05;Data / BI analyst;Private employer 2;removed;2026-10-13;expired
+2026-10-05;IT / digital project;Public employer 11;removed;unknown (checked 2026-10-13);sent
+2026-10-05;IT / digital project;Public employer 12;removed;2026-10-18;expired
+2026-10-05;Green / nature / sustainability;Public employer 6;removed;2026-10-20;expired
+2026-10-05;IT / digital project;Private employer 3;removed;2026-10-16;expired
+2026-10-05;Consultant / generalist;Organisation employer 3;removed;unknown (checked 2026-10-13);sent
+2026-10-05;Green / nature / sustainability (also worth a look);Public employer 13;removed;unknown (checked 2026-10-13);sent
+2026-10-05;IT / digital project (also worth a look);Public employer 14;removed;2026-10-22;expired
+2026-10-05;IT / digital project (also worth a look);Private employer 4;removed;2026-10-31;sent
+2026-10-12;AI role;Public employer 15;removed;2026-10-25;expired
+2026-10-12;Data / BI analyst;Public employer 16;removed;2026-10-22;expired
+2026-10-12;Consultant / generalist;Organisation employer 4;removed;2026-10-25;expired
+2026-10-12;Data / BI analyst;Private employer 5;removed;unknown (checked 2026-10-13);sent
+2026-10-12;Data / BI analyst;Public employer 17;removed;2026-10-14;not interested – note removed
+2026-10-12;AI role;Private employer 6;removed;unknown (checked 2026-10-13);sent
+2026-10-12;IT / digital project;Public employer 18;removed;2026-10-18;expired
+2026-10-12;Data / BI analyst;Private employer 7;removed;unknown;sent
+2026-10-12;Data / BI analyst;Private employer 8;removed;unknown (checked 2026-10-13);sent
+2026-10-12;Consultant / generalist (also worth a look);Private employer 9;removed;unknown (checked 2026-10-13);sent
+2026-10-12;IT / digital project (also worth a look);Public employer 19;removed;2026-10-18;not interested – note removed
+2026-10-12;Data / BI analyst (v4 test);Public employer 6;removed;2026-10-21;expired
+2026-10-12;AI role (v4 test);Private employer 7;removed;2026-11-15;sent
+2026-10-12;IT / digital project (v4 test);Public employer 20;removed;2026-11-04;sent
+2026-10-12;Data / BI analyst (v4 test);Public employer 21;removed;2026-11-06;sent
+2026-10-12;Data / BI analyst (v4 test);Public employer 20;removed;2026-11-04;sent
+2026-10-12;Application management (v4 test);Public employer 12;removed;unknown (checked 2026-10-13);sent
+2026-10-12;Application management (v4 test);Public employer 15;removed;2026-11-01;sent
+2026-10-12;IT / digital project (v4 test);Public employer 2;removed;unknown (checked 2026-10-13);sent
+2026-10-12;Green / nature / sustainability (v4 test);Public employer 22;removed;2026-10-25;expired
+2026-10-12;IT / digital project (v4 test);Private employer 10;removed;unknown (checked 2026-10-19);sent
+2026-10-12;Green / nature / sustainability (also worth a look) (v4 test);Public employer 23;removed;2026-11-08;sent
+2026-10-12;Data / BI analyst (also worth a look) (v4 test);Private employer 11;removed;unknown (checked 2026-10-19);sent
+2026-10-12;IT / digital project (also worth a look) (v4 test);Private employer 12;removed;unknown (checked 2026-10-19);sent
+2026-10-12;PhD position (PhD) (v4 test);Public employer 22;removed;2026-10-27;sent
+2026-10-12;PhD position (PhD) (v4 test);Public employer 22;removed;2026-11-11;sent
+2026-10-12;PhD position (PhD) (v4 test);Public employer 22;removed;2026-11-06;sent
+2026-10-13;Data / BI analyst (v5 test);Public employer 6;removed;2026-11-01;applied (2026-10-15, skill v2)
+2026-10-13;Consultant / generalist (v5 test);Private employer 13;removed;unknown (checked 2026-10-26);sent
+2026-10-13;IT / digital project (v5 test);Public employer 6;removed;2026-10-21;applied (2026-10-15, skill v2)
+2026-10-13;IT / digital project (v5 test);Private employer 14;removed;unknown;rejected (2026-10-15) – note removed
+2026-10-13;Consultant / generalist (also worth a look) (v5 test);Organisation employer 5;removed;2026-11-10;sent
+2026-10-13;Green / nature / sustainability (also worth a look) (v5 test);Public employer 6;removed;2026-10-26;sent
+2026-10-13;Consultant / generalist (also worth a look) (v5 test);Private employer 13;removed;unknown;applied (2026-10-16, own letter)
+2026-10-13;Data engineer / architect (data role) (v5 test);Private employer 15;removed;2026-10-18;expired
+2026-10-13;Data engineer / architect (data role) (v5 test);Private employer 16;removed;unknown (checked 2026-10-19);sent
+2026-10-13;Data engineer / architect (data role) (v5 test);Private employer 13;removed;unknown (checked 2026-10-26);sent
+2026-10-19;Data / BI analyst;Public employer 3;removed;2026-10-28;sent
+2026-10-19;Application management;Public employer 4;removed;2026-10-26;sent
+2026-10-19;IT / digital project;Public employer 2;removed;2026-11-01;sent
+2026-10-19;IT / digital project;Public employer 2;removed;2026-11-01;sent
+2026-10-19;Application management;Public employer 4;removed;2026-10-25;expired
+2026-10-19;Green / nature / sustainability;Public employer 6;removed;2026-10-30;sent
+2026-10-19;Consultant / generalist;Private employer 17;removed;unknown (checked 2026-10-26);sent
+2026-10-19;IT / digital project (also worth a look);Public employer 8;removed;2026-11-05;sent
+2026-10-19;IT / digital project (also worth a look);Public employer 24;removed;2026-11-02;sent
+2026-10-19;Application management (also worth a look);Public employer 3;removed;2026-11-02;sent
+2026-10-19;Data engineer / architect (data role);Private employer 18;removed;unknown (checked 2026-10-26);expired
+2026-10-19;Data engineer / architect (data role);Private employer 19;removed;unknown (checked 2026-10-26);sent
+2026-10-19;PhD position (PhD);Public employer 8;removed;2026-11-22;sent
+2026-10-26;IT / digital project;Public employer 2;removed;2026-11-15;sent
+2026-10-26;Application management;Public employer 8;removed;2026-11-15;sent
+2026-10-26;IT / digital project;Public employer 2;removed;2026-10-27;sent
+2026-10-26;IT / digital project;Public employer 8;removed;2026-11-11;sent
+2026-10-26;Data / BI analyst;Private employer 20;removed;unknown;sent
+2026-10-26;Data / BI analyst;Private employer 20;removed;unknown;sent
+2026-10-26;Green / nature / sustainability;Public employer 6;removed;2026-11-08;sent
+2026-10-26;IT / digital project;Private employer 21;removed;unknown;sent
+2026-10-26;Consultant / generalist;Public employer 6;removed;2026-11-10;sent
+2026-10-26;Data / BI analyst;Private employer 22;removed;unknown;sent
+2026-10-26;IT / digital project (also worth a look);Private employer 23;removed;unknown;sent
+2026-10-26;Green / nature / sustainability (also worth a look);Public employer 8;removed;2026-10-27;sent
+2026-10-26;Data / BI analyst (also worth a look);Private employer 19;removed;unknown;sent
+2026-10-26;PhD position (PhD);Public employer 8;removed;2026-12-01;sent

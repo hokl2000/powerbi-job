@@ -1,0 +1,22 @@
+model Model
+	culture: da-DK
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: da-DK
+	valueFilterBehavior: independent
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["job_log"]
+
+annotation PBI_ProTooling = ["MCP-PBIModeling","DevMode"]
+
+ref table job_log
+ref table DateTableTemplate_64215fd7-21d6-40cd-9795-fa7aedf70ef9
+ref table LocalDateTable_5a0aa072-2569-44b4-af71-aefda4ba065e
+ref table LocalDateTable_6becf20c-25b6-4a43-a3f1-cbe5f4c46ae2
+
+ref cultureInfo da-DK
+
