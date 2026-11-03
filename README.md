@@ -1,6 +1,18 @@
 # Job search dashboard – Power BI built with AI help
+A small Power BI report of my own job search (Sep–Oct 2026), built in Power BI Desktop with help from Claude.
 
-A small Power BI report of my own job search (Sep–Oct 2026), built in Power BI Desktop with help from Claude. One of the measures was added by Claude Code through Microsoft's **Power BI Modeling MCP server**, and I checked its result myself.
+## Why
+My weekly job agent logs every job it sends me. I wanted that log to tell me how many jobs a normal run finds, how my applications are going and which deadlines are coming up. I already knew Power BI, but had never used AI with it, so I built the report together with an AI agent.
+
+## What it shows
+- Power Query cleaning (M): 3 new columns turn a messy log into usable data. Deadline text becomes a real date or blank, statuses are cut to 5 groups, and 26 test rows are flagged so they don't distort the per-run chart.
+- DAX measures: Applied, Rejected and Deadlines next 7 days. I wrote Rejected and the filter conditions myself.
+- An AI agent changing a Power BI model: Claude Code added a measure through Microsoft's Power BI Modeling MCP server.
+- MCP safety: the measure was added without asking me first. I traced it to an allow rule for the whole server and changed it so Claude Code asks before every tool call.
+- Verifying AI output: I checked the AI-made measure against numbers I already knew (90 − 26 = 64).
+
+## Status: 
+works on a snapshot of real, anonymised data (90 rows, 26 Oct 2026); every number was checked by hand. The MCP server is a Microsoft preview.
 
 ![Report](images/report.png)
 
